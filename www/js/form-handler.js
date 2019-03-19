@@ -20,8 +20,9 @@
         url: '/form',
         type: 'POST',
         data: {
-          firstName: testForm.firstName.value,
-          lastName: testForm.lastName.value
+          manufacturer: testForm.manufacturer.value,
+          model: testForm.model.value,
+          year: testForm.year.value
         },
         success: postSuccessHandler
       });

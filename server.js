@@ -24,14 +24,18 @@ app.post('/form',function(req, res){
 	setTimeout(function(){
 
 		res.send(JSON.stringify({
-			firstName: req.body.firstName || null,
-			lastName: req.body.lastName || null
+			manufacturer: req.body.manufacturer || null,
+			model: req.body.model || null,
+      year: req.body.model || null
 		}));
 
 	}, 1000)
 
 	//debugging output for the terminal
-	console.log('you posted: First Name: ' + req.body.firstName + ', Last Name: ' + req.body.lastName);
+	console.log('you posted: Manufacturer: ' + req.body.manufacturer + ', Model: ' +
+  req.body.model + ', Year: ' +
+  req.body.year
+  );
 });
 
 //wait for a connection
